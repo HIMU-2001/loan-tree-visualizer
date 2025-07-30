@@ -4,7 +4,7 @@
 
 A tree-based visualizer built with **React + TypeScript + Tailwind CSS + React Flow** for managing hierarchical loan entities like Accounts, Loans, and Collaterals.
 
-> 🔗 [Live Demo](https://your-deployment-link.vercel.app)
+> 🔗 [Live Demo](https://loan-tree-visualizer.vercel.app)
 
 
 
