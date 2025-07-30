@@ -65,7 +65,37 @@ src/
 ````
 
 
+## 🗃️ Data Model
 
+### Internal Tree Node Format (React Flow Node)
+
+```ts
+type NodeType = "account" | "loan" | "collateral";
+
+interface TreeNodeData {
+  id: string;
+  type: NodeType;
+  parentId?: string;
+  label: string;
+}
+React Flow Compatible
+ts
+Copy
+Edit
+type Node = {
+  id: string;
+  type: NodeType;
+  data: TreeNodeData;
+  position: { x: number; y: number };
+};
+
+type Edge = {
+  id: string;
+  source: string;
+  target: string;
+};
+
+```
 ## 🎨 UX Design Decisions
 
 * 📌 **Left Side**: Visual canvas with buttons to add root nodes.
@@ -80,7 +110,7 @@ src/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/loan-tree-visualizer.git
+git clone https://github.com/HIMU-2001/loan-tree-visualizer.git
 cd loan-tree-visualizer
 ```
 
